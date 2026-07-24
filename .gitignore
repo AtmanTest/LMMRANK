@@ -15,5 +15,5 @@ npm-debug.log*
 .vscode/
 .idea/
 
-# Project
-public/data/*.json
+# Project (data files ARE tracked)
+# public/data/*.json — data is essential for the site

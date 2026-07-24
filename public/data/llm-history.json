@@ -1,0 +1,1052 @@
+[
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 86.3,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 84.9,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 83.1,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 82.7,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 80.9,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 78.7,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 76.3,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 79.5,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 75.3,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 77.8,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 76.4,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 80.0,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 70.9,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 74.8,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 72.4,
+    "date": "2026-06-24"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 84.3,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 85.4,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 85.1,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 82.8,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 83.7,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 82.2,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 81.2,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 77.0,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 80.7,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 77.4,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 74.0,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 76.0,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 74.4,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 72.8,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 74.8,
+    "date": "2026-06-27"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 84.9,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 86.4,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 84.7,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 85.9,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 84.0,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 82.3,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 77.1,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 79.6,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 78.1,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 81.0,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 78.4,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 76.3,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 73.3,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 73.8,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 73.3,
+    "date": "2026-06-30"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 84.1,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 83.2,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 84.6,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 84.6,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 83.2,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 83.1,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 78.2,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 79.1,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 77.9,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 77.5,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 78.0,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 72.2,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 74.6,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 73.5,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 71.8,
+    "date": "2026-07-03"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 83.4,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 84.3,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 82.5,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 85.7,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 82.6,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 79.5,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 78.0,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 79.0,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 77.4,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 77.5,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 77.2,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 74.9,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 72.5,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 74.3,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 72.4,
+    "date": "2026-07-06"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 88.7,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 84.6,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 84.3,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 85.7,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 82.7,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 81.8,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 77.9,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 79.7,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 77.5,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 78.2,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 78.7,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 74.8,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 74.5,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 75.0,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 73.8,
+    "date": "2026-07-09"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 84.8,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 84.9,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 84.0,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 84.1,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 82.4,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 82.5,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 80.1,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 80.2,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 78.1,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 77.1,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 76.8,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 76.4,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 73.3,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 74.1,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 72.6,
+    "date": "2026-07-12"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 86.7,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 84.2,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 85.5,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 85.5,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 82.8,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 81.8,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 77.9,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 78.0,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 78.0,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 76.3,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 77.8,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 75.3,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 73.5,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 73.6,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 72.7,
+    "date": "2026-07-15"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 85.5,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 84.7,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 84.4,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 84.3,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 83.0,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 81.3,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 78.8,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 78.0,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 78.3,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 77.7,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 77.9,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 75.1,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 74.9,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 74.9,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 72.5,
+    "date": "2026-07-18"
+  },
+  {
+    "model_id": "gemini-3-pro",
+    "display_name": "Gemini 3 Pro",
+    "provider": "google",
+    "global_score": 85.9,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT-5",
+    "provider": "openai",
+    "global_score": 85.2,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "o4",
+    "display_name": "O4",
+    "provider": "openai",
+    "global_score": 84.6,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "gpt-4.1",
+    "display_name": "GPT-4.1",
+    "provider": "openai",
+    "global_score": 84.7,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "claude-4-opus",
+    "display_name": "Claude 4 Opus",
+    "provider": "anthropic",
+    "global_score": 82.8,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "deepseek-v4",
+    "display_name": "DeepSeek V4",
+    "provider": "deepseek",
+    "global_score": 81.6,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "claude-4-sonnet",
+    "display_name": "Claude 4 Sonnet",
+    "provider": "anthropic",
+    "global_score": 78.9,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "o4-mini",
+    "display_name": "O4 Mini",
+    "provider": "openai",
+    "global_score": 78.0,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "provider": "google",
+    "global_score": 78.4,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "o3-mini",
+    "display_name": "O3 Mini",
+    "provider": "openai",
+    "global_score": 77.6,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "nova-premier",
+    "display_name": "Nova Premier",
+    "provider": "amazon",
+    "global_score": 77.6,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "gpt-4.5",
+    "display_name": "GPT-4.5",
+    "provider": "openai",
+    "global_score": 75.3,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "grok-4",
+    "display_name": "Grok 4",
+    "provider": "xai",
+    "global_score": 74.9,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "llama-4-405b",
+    "display_name": "Llama 4 405B",
+    "provider": "meta",
+    "global_score": 74.3,
+    "date": "2026-07-21"
+  },
+  {
+    "model_id": "qwen-3-110b",
+    "display_name": "Qwen 3 110B",
+    "provider": "alibaba",
+    "global_score": 73.3,
+    "date": "2026-07-21"
+  }
+]
