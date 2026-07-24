@@ -4,20 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LLMRANK — AI Model Leaderboard</title>
-  <meta name="description" content="Classement composite des modèles IA — scores agrégés depuis 11 benchmarks publics avec filtres avancés, historique et transparence." />
+  <meta name="description" content="Classement Elo de 378 modèles IA depuis Chatbot Arena (LMSYS) — données réelles, filtres avancés, transparence." />
   <meta name="theme-color" content="#0a0a0f" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@450;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>📊</text></svg>" />
+  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🏆</text></svg>" />
 </head>
 <body>
   <nav class="top-bar">
     <div class="top-bar-inner">
       <a class="logo" href="./">LLMRANK</a>
-      <span class="logo-sub">v2</span>
-      <span class="top-bar-meta" id="metaLine"></span>
+      <span class="logo-sub">v3·arena</span>
+      <span class="top-bar-meta">Données réelles Chatbot Arena</span>
     </div>
   </nav>
 
@@ -25,157 +25,93 @@
     <!-- Hero -->
     <header class="hero">
       <div>
-        <h1>AI Model Leaderboard</h1>
-        <p class="lede">Score composite pondéré de <strong id="modelCountHero">—</strong> modèles, agrégé depuis <strong id="benchmarkCountHero">—</strong> benchmarks publics. <a href="#methodology">Méthodologie →</a></p>
-      </div>
-      <div class="hero-actions">
-        <button id="refreshBtn" title="Rafraîchir les données">⟳</button>
-        <button id="showAllBenchmarks" class="ghost" title="Afficher tous les benchmarks">+ Benchmarks</button>
+        <h1>Classement IA — Chatbot Arena</h1>
+        <p class="lede"><strong id="model-count">—</strong> modèles classés par score Elo Arena, couvrant <strong id="provider-count">—</strong> fournisseurs. <a href="#methodology">Méthodologie →</a></p>
       </div>
     </header>
 
-    <!-- Stats -->
-    <section class="stats" id="stats" aria-label="Statistiques du classement"></section>
-
-    <!-- Filters -->
-    <section class="filters" aria-label="Filtres">
-      <div class="filter-row">
-        <div class="fg">
-          <label for="providerFilter">Provider</label>
-          <select id="providerFilter"></select>
-        </div>
-        <div class="fg">
-          <label for="familyFilter">Famille</label>
-          <select id="familyFilter"></select>
-        </div>
-        <div class="fg">
-          <label for="modalityFilter">Modalité</label>
-          <select id="modalityFilter"></select>
-        </div>
-        <div class="fg">
-          <label for="licenseFilter">Licence</label>
-          <select id="licenseFilter"></select>
-        </div>
-        <div class="fg" style="min-width:140px">
-          <label for="priceFilter">Prix max /1M</label>
-          <select id="priceFilter">
-            <option value="all">Tous</option>
-            <option value="0.5">≤ $0.50</option>
-            <option value="1">≤ $1.00</option>
-            <option value="3">≤ $3.00</option>
-            <option value="10">≤ $10.00</option>
-            <option value="20">≤ $20.00</option>
-            <option value="100">≤ $100.00</option>
-          </select>
-        </div>
-        <div class="fg" style="min-width:130px">
-          <label for="speedFilter">Rapidité</label>
-          <select id="speedFilter">
-            <option value="all">Toutes</option>
-            <option value="fast">Rapide (≥150 tok/s)</option>
-            <option value="medium">Moyen (50-149)</option>
-            <option value="slow">Lent (&lt;50)</option>
-          </select>
-        </div>
-        <div class="fg grow">
-          <label for="searchInput">Recherche</label>
-          <input id="searchInput" type="search" placeholder="Claude, GPT, Qwen…" />
-        </div>
-        <div class="fg" style="min-width:140px">
-          <label for="statusFilter">Statut</label>
-          <select id="statusFilter">
-            <option value="all">Tous</option>
-            <option value="active">Actif</option>
-            <option value="stale">Stale</option>
-            <option value="partial">Partiel</option>
-          </select>
-        </div>
-        <div class="fg" style="min-width:120px">
-          <label for="sortSelect">Tri</label>
-          <select id="sortSelect">
-            <option value="rank">Rang</option>
-            <option value="score">Score</option>
-            <option value="price">Prix ↑</option>
-            <option value="price-desc">Prix ↓</option>
-            <option value="speed">Vitesse ↑</option>
-            <option value="context">Contexte ↑</option>
-          </select>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ranking -->
-    <section class="panel" id="ranking-section">
-      <div class="table-wrap">
-        <table id="rankingTable">
-          <thead id="tableHead">
-            <tr>
-              <th class="col-rank">#</th>
-              <th class="col-model">Modèle</th>
-              <th class="col-provider">Provider</th>
-              <th class="col-score">Score</th>
-              <th class="col-hle">HLE</th>
-              <th class="col-gpqa">GPQA</th>
-              <th class="col-swe">SWE</th>
-              <th class="col-arena">Arena</th>
-              <th class="col-extra hide">LiveB</th>
-              <th class="col-extra hide">MATH</th>
-              <th class="col-extra hide">LCB</th>
-              <th class="col-extra hide">BFCL</th>
-              <th class="col-extra hide">OSW</th>
-              <th class="col-price">Prix</th>
-              <th class="col-context">Ctx</th>
-              <th class="col-status">État</th>
-            </tr>
-          </thead>
-          <tbody id="rankingBody"></tbody>
-        </table>
-      </div>
-      <div class="table-footer" id="tableFooter"></div>
-    </section>
-
-    <!-- History + Methodology -->
-    <div class="grid-2">
-      <section class="panel">
-        <div class="section-head">
-          <h2>Historique</h2>
-          <p>Top 10 — 30 derniers jours</p>
-        </div>
-        <canvas id="historyChart" height="160"></canvas>
-      </section>
-      <section class="panel methodology" id="methodology">
-        <div class="section-head">
-          <h2>Méthodologie</h2>
-          <p>v2 — Composite robuste</p>
-        </div>
-        <ul>
-          <li>Chaque benchmark est normalisé en z-score sur son échelle.</li>
-          <li>Pondération par fiabilité de la source et pertinence métier.</li>
-          <li>Coefficient de fraîcheur : les données &gt;30 jours sont dépréciées.</li>
-          <li>Coefficient de confiance : sources auto-déclarées pénalisées.</li>
-          <li>Les benchmarks absents n'affectent pas le score.</li>
-          <li>Intervalle de confiance reflète le nombre de benchmarks disponibles.</li>
-          <li>Les modèles sans nouvelles données depuis &gt;7 jours sont marqués <span class="tag-stale">stale</span>.</li>
-        </ul>
-      </section>
+    <!-- Stats bar -->
+    <div class="stats-bar">
+      <div class="stat"><span class="stat-label">Top score</span><span class="stat-value" id="top-score">—</span></div>
+      <div class="stat"><span class="stat-label">Score moyen</span><span class="stat-value" id="avg-score">—</span></div>
+      <div class="stat"><span class="stat-label">Votes totaux</span><span class="stat-value" id="total-votes">—</span></div>
+      <div class="stat"><span class="stat-label">Source</span><span class="stat-value source-link">arena.ai</span></div>
     </div>
 
-    <!-- Sources -->
-    <section class="panel sources" id="sources">
-      <div class="section-head">
-        <h2>Sources &amp; Benchmarks</h2>
-        <p>Données agrégées depuis leaderboards publics</p>
+    <!-- Filters -->
+    <div class="filters">
+      <div class="filter-group">
+        <label for="filter-search">🔍</label>
+        <input type="search" id="filter-search" placeholder="Rechercher un modèle..." class="filter-input" autocomplete="off" />
       </div>
-      <div class="source-grid" id="sourceGrid"></div>
-      <p class="source-note">Les données approximatives sont marquées <span class="tag-partial">~</span>. Consultez le <a href="https://github.com/AtmanTest/LMMRANK" target="_blank" rel="noopener">dépôt GitHub</a> pour les scripts de mise à jour.</p>
+      <div class="filter-group">
+        <select id="filter-provider" class="filter-select">
+          <option value="all">Tous les providers</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <select id="filter-sort" class="filter-select">
+          <option value="rank">Tri : Rang</option>
+          <option value="score">Tri : Score</option>
+          <option value="votes">Tri : Votes</option>
+          <option value="context">Tri : Contexte</option>
+          <option value="price">Tri : Prix (entrée)</option>
+        </select>
+      </div>
+      <div class="filter-count" id="count">— / — modèles</div>
+      <button id="btn-showall" class="btn-outline">Afficher tout (378)</button>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrap">
+      <table class="ranking-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Modèle</th>
+            <th>Score Elo</th>
+            <th>Votes</th>
+            <th>Prix $/M tok</th>
+            <th>Contexte</th>
+          </tr>
+        </thead>
+        <tbody id="rankings-body">
+          <tr><td colspan="6" class="empty-row">Chargement des données...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Methodology -->
+    <section id="methodology" class="section">
+      <h2>Méthodologie</h2>
+      <div class="methodology-grid">
+        <div class="methodo-card">
+          <h3>📡 Source des données</h3>
+          <p>Données extraites de <a href="https://arena.ai/leaderboard/text/overall" target="_blank" rel="noopener">Chatbot Arena (LMSYS)</a> — classement Elo des modèles de langage basé sur les préférences humaines (votes des utilisateurs).</p>
+          <p><strong>378 modèles</strong> classés, mis à jour le <strong>21 juillet 2026</strong>.</p>
+        </div>
+        <div class="methodo-card">
+          <h3>📊 Score Elo Arena</h3>
+          <p>Score Elo calculé à partir de centaines de milliers de comparaisons par paires. Intervalle de confiance à 95% (±) indiqué. Les scores préliminaires (&lt;10K votes) sont marqués.</p>
+        </div>
+        <div class="methodo-card">
+          <h3>💰 Prix</h3>
+          <p>Prix d'entrée et de sortie par million de tokens (API). Sources directes des fournisseurs. « — » indique une donnée non disponible (modèle open source ou API non publique).</p>
+        </div>
+        <div class="methodo-card">
+          <h3>⚠️ Transparence</h3>
+          <p>LLMRANK ne calcule pas de score composite. L'intégralité des données provient du Chatbot Arena. Les données historiques sont des projections heuristiques. Consultez arena.ai pour les données officielles.</p>
+        </div>
+      </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>LLMRANK v3 — <a href="https://github.com/AtmanTest/LMMRANK" target="_blank" rel="noopener">GitHub</a> — <a href="https://arena.ai/leaderboard/text/overall" target="_blank" rel="noopener">Chatbot Arena</a></p>
+      <p class="footer-meta">Données réelles Arena • 378 modèles • 26 providers • Mis à jour 2026-07-21</p>
+    </footer>
   </main>
 
-  <footer class="footer">
-    <span>LLMRANK v2 · Construit par <a href="https://github.com/AtmanTest" target="_blank" rel="noopener">Atman</a> · <a href="https://github.com/AtmanTest/LMMRANK" target="_blank" rel="noopener">GitHub</a> · Données mises à jour le <span id="footerDate">—</span></span>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

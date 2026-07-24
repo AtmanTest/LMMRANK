@@ -1,377 +1,193 @@
-/* LLMRANK v2 — Application
-   ============================================================ */
+/**
+ * LLMRANK v3 — Real Chatbot Arena data
+ * 378 modèles, scores Elo, filtres temps réel
+ */
+(function () {
+  'use strict';
 
-const state = { ranking: null, history: null, chart: null, error: null, showAllBench: false };
+  const EL = document.getElementById.bind(document);
+  const Q = document.querySelectorAll.bind(document);
 
-/* ─── Load ─── */
-async function loadData() {
-  showLoading();
-  const bust = `?t=${Date.now()}`;
-  try {
-    const [rr, hr] = await Promise.all([
-      fetch(`public/data/llm-ranking.json${bust}`),
-      fetch(`public/data/llm-history.json${bust}`)
-    ]);
-    if (!rr.ok) throw new Error(`HTTP ${rr.status}`);
-    if (!hr.ok) throw new Error(`HTTP ${hr.status}`);
-    state.ranking = await rr.json();
-    state.history = await hr.json();
-    state.error = null;
-    validateData();
-    initUI();
-  } catch (e) {
-    state.error = e.message;
-    showError(e);
-  }
-}
+  // ─── State ───
+  let rankings = [];
+  let filtered = [];
+  const state = {
+    provider: 'all',
+    search: '',
+    sort: 'rank',
+    limit: 100,
+  };
 
-function validateData() {
-  const r = state.ranking;
-  if (!r || !r.rankings) throw new Error('Données invalides');
-  r.metadata = r.metadata || {};
-  r.metadata.model_count = r.rankings.length;
-  r.metadata.provider_count = Object.keys(r.providers || {}).length;
-  r.metadata.benchmark_count = Object.keys(r.benchmarks || {}).length;
-}
-
-/* ─── UI States ─── */
-function showLoading() {
-  const body = document.getElementById('rankingBody');
-  body.innerHTML = `<tr><td colspan="16"><div class="loading-state"><div class="spinner"></div><span>Chargement…</span></div></td></tr>`;
-  document.getElementById('stats').innerHTML = '';
-  document.getElementById('metaLine').textContent = 'Chargement…';
-}
-
-function showError(err) {
-  document.getElementById('rankingBody').innerHTML =
-    `<tr><td colspan="16"><div class="error-state">
-      <span class="icon">⚠️</span>
-      <p>Impossible de charger les données</p>
-      <p class="error-detail">${err.message}</p>
-      <button onclick="loadData()" style="margin-top:12px">Réessayer</button>
-    </div></td></tr>`;
-  document.getElementById('metaLine').textContent = 'Erreur';
-}
-
-/* ─── Init UI ─── */
-function initUI() {
-  const r = state.ranking;
-  const meta = r.metadata;
-
-  // Hero counts
-  document.getElementById('modelCountHero').textContent = meta.model_count;
-  document.getElementById('benchmarkCountHero').textContent = meta.benchmark_count;
-
-  // Meta line
-  const genDate = r.generated_at
-    ? new Date(r.generated_at).toLocaleDateString('fr-FR')
-    : '—';
-  document.getElementById('metaLine').textContent =
-    `${meta.model_count} modèles · ${meta.provider_count} providers · ${r.benchmarks ? Object.keys(r.benchmarks).length : 0} benchmarks · ${genDate}`;
-  document.getElementById('footerDate').textContent = genDate;
-
-  // Populate filter dropdowns
-  populateSelect('#providerFilter', r.rankings.map(x => x.provider), 'Tous');
-  populateSelect('#familyFilter', [...new Set(r.rankings.map(x => x.family))].filter(Boolean), 'Toutes');
-  populateSelect('#modalityFilter', r.modalities || [], 'Toutes');
-  populateSelect('#licenseFilter', r.licenses || [], 'Toutes');
-
-  // Sources grid
-  renderSources();
-
-  // Render everything
-  renderStats();
-  renderTable();
-  renderChart();
-  updateFooter();
-}
-
-function populateSelect(selId, values, allLabel) {
-  const sel = document.querySelector(selId);
-  if (!sel) return;
-  if (sel.options.length > 1) return;
-  sel.innerHTML = `<option value="all">${allLabel}</option>`;
-  [...new Set(values)].sort().forEach(v => {
-    const o = document.createElement('option');
-    o.value = v;
-    o.textContent = v;
-    sel.appendChild(o);
-  });
-}
-
-/* ─── Filter / Sort ─── */
-function filtered() {
-  const prov = val('#providerFilter');
-  const family = val('#familyFilter');
-  const mod = val('#modalityFilter');
-  const lic = val('#licenseFilter');
-  const pr = val('#priceFilter');
-  const sp = val('#speedFilter');
-  const st = val('#statusFilter');
-  const q = val('#searchInput').toLowerCase().trim();
-  const sort = val('#sortSelect');
-
-  let rows = [...state.ranking.rankings];
-
-  if (prov !== 'all') rows = rows.filter(r => r.provider === prov);
-  if (family !== 'all') rows = rows.filter(r => r.family === family);
-  if (mod !== 'all') rows = rows.filter(r => r.modality === mod);
-  if (lic !== 'all') rows = rows.filter(r => r.license === lic);
-  if (pr !== 'all') rows = rows.filter(r => (r.price_in || 999) <= parseFloat(pr));
-  if (sp !== 'all') {
-    const t = r => r.throughput || 0;
-    if (sp === 'fast') rows = rows.filter(r => t(r) >= 150);
-    else if (sp === 'medium') rows = rows.filter(r => t(r) >= 50 && t(r) < 150);
-    else rows = rows.filter(r => t(r) < 50);
-  }
-  if (st !== 'all') rows = rows.filter(r => (r.status || 'active') === st);
-  if (q) rows = rows.filter(r => `${r.display_name} ${r.provider} ${r.vendor}`.toLowerCase().includes(q));
-
-  // Sort
-  if (sort === 'score') rows.sort((a, b) => b.global_score - a.global_score);
-  else if (sort === 'price') rows.sort((a, b) => (a.price_in || 999) - (b.price_in || 999));
-  else if (sort === 'price-desc') rows.sort((a, b) => (b.price_in || 0) - (a.price_in || 0));
-  else if (sort === 'speed') rows.sort((a, b) => (a.throughput || 0) - (b.throughput || 0));
-  else if (sort === 'context') rows.sort((a, b) => (a.context_window || 0) - (b.context_window || 0));
-  else rows.sort((a, b) => (a.rank || 999) - (b.rank || 999));
-
-  return rows;
-}
-
-function val(id) {
-  const el = document.querySelector(id);
-  return el ? el.value : 'all';
-}
-
-/* ─── Stats ─── */
-function renderStats() {
-  const rankings = state.ranking.rankings;
-  if (!rankings || !rankings.length) return;
-  const top = rankings[0];
-  const avg = (rankings.reduce((s, r) => s + r.global_score, 0) / rankings.length).toFixed(1);
-  const med = median(rankings.map(r => r.global_score)).toFixed(1);
-  const providers = state.ranking.providers ? Object.keys(state.ranking.providers).length : '—';
-  const active = rankings.filter(r => (r.status || 'active') === 'active').length;
-  const withPrice = rankings.filter(r => r.price_in != null && r.price_in > 0).length;
-
-  const items = [
-    ['Modèles', String(rankings.length)],
-    ['Providers', String(providers)],
-    ['Top Score', `${top.global_score} <small>${top.display_name}</small>`],
-    ['Médiane', String(med)],
-    ['Moyenne', String(avg)],
-    ['Benchmarks', String(Object.keys(state.ranking.benchmarks || {}).length)],
-    ['Actifs', String(active)],
-    ['Prix connus', String(withPrice)]
-  ];
-  document.getElementById('stats').innerHTML = items
-    .map(([k, v]) => `<article class="stat"><span class="k">${k}</span><span class="v">${v}</span></article>`)
-    .join('');
-}
-
-function median(arr) {
-  const s = [...arr].sort((a, b) => a - b);
-  const mid = Math.floor(s.length / 2);
-  return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
-}
-
-/* ─── Table ─── */
-function renderTable() {
-  const rows = filtered();
-  const html = rows.map(r => renderRow(r)).join('');
-
-  if (!html) {
-    document.getElementById('rankingBody').innerHTML =
-      `<tr><td colspan="16"><div class="empty-state">Aucun modèle trouvé</div></td></tr>`;
-  } else {
-    document.getElementById('rankingBody').innerHTML = html;
+  // ─── Format helpers ───
+  function fmtPrice(v) {
+    if (v == null || isNaN(v)) return '—';
+    return '$' + v.toFixed(2);
   }
 
-  updateFooter(rows.length);
-}
-
-function renderRow(r) {
-  const sc = r.global_score || 0;
-  const scoreClass = sc >= 80 ? 'top' : sc >= 60 ? 'high' : sc >= 40 ? 'mid' : sc >= 20 ? 'low' : 'bottom';
-  const ci = r.confidence_interval
-    ? `±${Math.abs((r.confidence_interval.high || sc) - sc).toFixed(1)}`
-    : '—';
-  const status = r.status || 'active';
-  const statusClass = status === 'active' ? 'status-active' : status === 'stale' ? 'status-stale' : 'status-partial';
-  const modalities = r.modality ? r.modality.split('+').map(m => `<span class="tag-modality">${m.trim()}</span>`).join('') : '';
-
-  // Benchmarks
-  const hle = f(r.benchmarks?.hle?.raw_score);
-  const gpqa = f(r.benchmarks?.gpqa_diamond?.raw_score);
-  const swe = f(r.benchmarks?.swe_bench_verified?.raw_score);
-  const arena = f(r.benchmarks?.arena_elo?.raw_score);
-  const liveb = f(r.benchmarks?.livebench?.raw_score);
-  const math = f(r.benchmarks?.math_500?.raw_score);
-  const lcb = f(r.benchmarks?.live_code_bench?.raw_score);
-  const bfcl = f(r.benchmarks?.bfcl?.raw_score);
-  const osw = f(r.benchmarks?.osworld?.raw_score);
-
-  const extraClass = state.showAllBench ? '' : 'hide';
-
-  // Price
-  let priceStr = '—';
-  if (r.price_in != null && r.price_in > 0) {
-    priceStr = `$${r.price_in < 0.01 ? r.price_in.toFixed(3) : r.price_in.toFixed(2)}`;
+  function fmtContext(v) {
+    if (!v) return '—';
+    if (v >= 1_000_000) return (v / 1_000_000).toFixed(v % 1_000_000 === 0 ? 0 : 1) + 'M';
+    if (v >= 1_000) return (v / 1_000).toFixed(v % 1_000 === 0 ? 0 : 1) + 'K';
+    return v.toLocaleString();
   }
 
-  // Context
-  let ctxStr = '—';
-  if (r.context_window) ctxStr = r.context_window >= 1000 ? `${r.context_window/1000}M` : `${r.context_window}K`;
-
-  return `<tr>
-    <td class="col-rank">${r.rank}</td>
-    <td class="col-model">
-      <span class="model-name">${r.display_name}</span>
-      <span class="model-meta">${r.family || ''}${modalities}</span>
-    </td>
-    <td class="col-provider">${r.vendor || r.provider}</td>
-    <td class="col-score">
-      <div class="score-bar-wrap">
-        <span class="score-${scoreClass}">${sc}</span>
-        <span class="ci">${ci}</span>
-        <div class="score-bar score-bar-${scoreClass}"><div class="score-bar-fill" style="width:${sc}%"></div></div>
-      </div>
-    </td>
-    <td class="bench-cell">${hle}</td>
-    <td class="bench-cell">${gpqa}</td>
-    <td class="bench-cell">${swe}</td>
-    <td class="bench-cell">${arena}</td>
-    <td class="bench-cell col-extra ${extraClass}">${liveb}</td>
-    <td class="bench-cell col-extra ${extraClass}">${math}</td>
-    <td class="bench-cell col-extra ${extraClass}">${lcb}</td>
-    <td class="bench-cell col-extra ${extraClass}">${bfcl}</td>
-    <td class="bench-cell col-extra ${extraClass}">${osw}</td>
-    <td class="price-cell">${priceStr}</td>
-    <td class="context-cell">${ctxStr}</td>
-    <td><span class="status-badge ${statusClass}">${status}</span></td>
-  </tr>`;
-}
-
-function f(v) {
-  if (v == null) return '<span class="na">—</span>';
-  return v;
-}
-
-function updateFooter(count) {
-  const total = state.ranking.rankings.length;
-  document.getElementById('tableFooter').textContent =
-    `${count} / ${total} modèles affichés`;
-}
-
-/* ─── Sources ─── */
-function renderSources() {
-  const bm = state.ranking.benchmarks;
-  if (!bm) return;
-  const grid = document.getElementById('sourceGrid');
-  grid.innerHTML = Object.entries(bm).map(([k, v]) =>
-    `<div class="source-card">
-      <span class="s-label">${v.label || k}</span>
-      <span class="s-weight">Poids ${v.weight || '?'}% · ${k}</span>
-    </div>`
-  ).join('');
-}
-
-/* ─── Chart ─── */
-function renderChart() {
-  const rankings = state.ranking.rankings;
-  if (!rankings || !rankings.length) return;
-
-  const top10 = rankings.slice(0, 10).map(r => r.model_id);
-  const series = state.history ? state.history.filter(x => top10.includes(x.model_id)) : [];
-  const dates = [...new Set(series.map(x => x.date))].sort();
-
-  if (dates.length === 0) {
-    document.querySelector('.grid-2 .panel:first-child .section-head p').textContent = 'Pas d\'historique';
-    return;
+  function fmtVotes(v) {
+    if (!v) return '—';
+    return v.toLocaleString();
   }
 
-  const colors = ['#6366f1','#06b6d4','#22c55e','#eab308','#f97316','#ef4444','#a855f7','#ec4899','#14b8a6','#f43f5e'];
+  function fmtScore(v) {
+    return v != null ? v.toFixed(0) : '—';
+  }
 
-  const datasets = top10.map((id, i) => ({
-    label: rankings.find(r => r.model_id === id)?.display_name || id,
-    data: dates.map(d => {
-      const e = series.find(x => x.date === d && x.model_id === id);
-      return e ? e.global_score : null;
-    }),
-    borderColor: colors[i % colors.length],
-    backgroundColor: colors[i % colors.length] + '20',
-    borderWidth: 1.5,
-    tension: 0.3,
-    fill: false,
-    pointRadius: 2,
-    pointHoverRadius: 5,
-  }));
+  // ─── Render ───
+  function render() {
+    const tbody = EL('rankings-body');
+    const count = EL('count');
+    const fullCount = rankings.length;
 
-  const ctx = document.getElementById('historyChart');
-  if (state.chart) state.chart.destroy();
-
-  state.chart = new Chart(ctx, {
-    type: 'line',
-    data: { labels: dates, datasets },
-    options: {
-      responsive: true,
-      maintainAspectRatio: true,
-      plugins: {
-        legend: {
-          labels: { color: '#94a3b8', font: { size: 10 }, boxWidth: 12, padding: 10 },
-          maxHeight: 80
-        },
-        tooltip: {
-          backgroundColor: '#111',
-          titleColor: '#e2e8f0',
-          bodyColor: '#94a3b8',
-          borderColor: 'rgba(255,255,255,0.08)',
-          borderWidth: 1,
-          padding: 8,
-          cornerRadius: 6
-        }
-      },
-      scales: {
-        x: {
-          ticks: { color: '#64748b', font: { size: 10 }, maxTicksLimit: 6 },
-          grid: { color: 'rgba(255,255,255,0.05)' }
-        },
-        y: {
-          ticks: { color: '#64748b', font: { size: 10 } },
-          grid: { color: 'rgba(255,255,255,0.05)' }
-        }
-      },
-      interaction: { intersect: false, mode: 'index' }
-    }
-  });
-}
-
-/* ─── Events ─── */
-document.addEventListener('DOMContentLoaded', () => {
-  loadData();
-
-  // Filter inputs
-  ['providerFilter','familyFilter','modalityFilter','licenseFilter',
-   'priceFilter','speedFilter','statusFilter','searchInput','sortSelect'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('change', () => renderTable());
-  });
-  document.getElementById('searchInput')?.addEventListener('input', () => renderTable());
-
-  // Refresh
-  document.getElementById('refreshBtn')?.addEventListener('click', () => {
-    loadData();
-    document.getElementById('refreshBtn').textContent = '⟳';
-  });
-
-  // Toggle all benchmarks
-  document.getElementById('showAllBenchmarks')?.addEventListener('click', () => {
-    state.showAllBench = !state.showAllBench;
-    document.getElementById('showAllBenchmarks').textContent =
-      state.showAllBench ? '− Benchmarks' : '+ Benchmarks';
-    document.querySelectorAll('.col-extra').forEach(el => {
-      el.style.display = state.showAllBench ? '' : 'none';
+    // Apply filters
+    filtered = rankings.filter(function (m) {
+      if (state.provider !== 'all' && m.provider !== state.provider) return false;
+      if (state.search) {
+        var q = state.search.toLowerCase();
+        var name = (m.display_name || '').toLowerCase();
+        var prov = (m.provider || '').toLowerCase();
+        if (name.indexOf(q) === -1 && prov.indexOf(q) === -1) return false;
+      }
+      return true;
     });
-    renderTable();
-  });
-});
+
+    // Sort
+    switch (state.sort) {
+      case 'score': filtered.sort(function (a, b) { return (b.arena_score || 0) - (a.arena_score || 0); }); break;
+      case 'votes': filtered.sort(function (a, b) { return (b.arena_votes || 0) - (a.arena_votes || 0); }); break;
+      case 'context': filtered.sort(function (a, b) { return (b.context_tokens || 0) - (a.context_tokens || 0); }); break;
+      case 'price': filtered.sort(function (a, b) { return (a.price_in_per_mtok || 999) - (b.price_in_per_mtok || 999); }); break;
+      case 'rank':
+      default: filtered.sort(function (a, b) { return a.arena_rank - b.arena_rank; }); break;
+    }
+
+    count.textContent = filtered.length + ' / ' + fullCount + ' modèles';
+
+    var html = '';
+    var show = state.limit === 0 ? filtered : filtered.slice(0, state.limit);
+    for (var i = 0; i < show.length; i++) {
+      var m = show[i];
+      var rank = m.arena_rank;
+      var rankSpread = m.arena_rank_spread || '—';
+      var name = m.display_name || m.model_id;
+      var provider = m.provider || '?';
+      var score = fmtScore(m.arena_score);
+      var ci = m.arena_score_ci ? '±' + m.arena_score_ci : '';
+      var votes = fmtVotes(m.arena_votes);
+      var priceIn = fmtPrice(m.price_in_per_mtok);
+      var priceOut = fmtPrice(m.price_out_per_mtok);
+      var ctx = fmtContext(m.context_tokens);
+      var prelim = m.arena_preliminary ? ' <span class="badge-prelim">Prélim.</span>' : '';
+
+      var cls = rank <= 10 ? 'row-top' : '';
+
+      html += '<tr class="' + cls + '">';
+      html += '<td class="td-rank">' + rank + '</td>';
+      html += '<td class="td-model"><strong>' + name + '</strong>' + prelim + '<br><span class="provider-tag">' + provider + '</span></td>';
+      html += '<td class="td-score">' + score + ' <span class="ci">' + ci + '</span></td>';
+      html += '<td class="td-votes">' + votes + '</td>';
+      html += '<td class="td-price">' + priceIn + ' / ' + priceOut + '</td>';
+      html += '<td class="td-ctx">' + ctx + '</td>';
+      html += '</tr>';
+    }
+
+    if (show.length === 0) {
+      html = '<tr><td colspan="6" class="empty-row">🔍 Aucun modèle trouvé</td></tr>';
+    }
+
+    tbody.innerHTML = html;
+
+    // Update stats
+    if (EL('avg-score')) {
+      var sum = 0, c = 0;
+      for (var j = 0; j < filtered.length; j++) {
+        if (filtered[j].arena_score != null) { sum += filtered[j].arena_score; c++; }
+      }
+      EL('avg-score').textContent = c > 0 ? (sum / c).toFixed(0) : '—';
+    }
+    if (EL('top-score')) {
+      EL('top-score').textContent = rankings.length > 0 ? fmtScore(rankings[0].arena_score) : '—';
+    }
+    if (EL('model-count')) {
+      EL('model-count').textContent = fullCount;
+    }
+    if (EL('provider-count')) {
+      EL('provider-count').textContent = rankings.reduce(function (acc, m) { return acc.indexOf(m.provider) === -1 ? acc.concat([m.provider]) : acc; }, []).length;
+    }
+  }
+
+  // ─── Load data ───
+  function loadData() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'public/data/llm-ranking.json', true);
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        try {
+          var data = JSON.parse(xhr.responseText);
+          rankings = data.rankings || [];
+          initFilters();
+          render();
+        } catch (e) {
+          EL('rankings-body').innerHTML = '<tr><td colspan="6" class="empty-row">⚠️ Erreur de chargement des données</td></tr>';
+        }
+      } else {
+        EL('rankings-body').innerHTML = '<tr><td colspan="6" class="empty-row">⚠️ Données non disponibles</td></tr>';
+      }
+    };
+    xhr.onerror = function () {
+      EL('rankings-body').innerHTML = '<tr><td colspan="6" class="empty-row">⚠️ Erreur réseau</td></tr>';
+    };
+    xhr.send();
+  }
+
+  // ─── Filters ───
+  function initFilters() {
+    // Provider filter
+    var providers = [];
+    for (var i = 0; i < rankings.length; i++) {
+      var p = rankings[i].provider;
+      if (p && providers.indexOf(p) === -1) providers.push(p);
+    }
+    providers.sort();
+
+    var sel = EL('filter-provider');
+    var html = '<option value="all">Tous les providers</option>';
+    for (var j = 0; j < providers.length; j++) {
+      html += '<option value="' + providers[j] + '">' + providers[j] + '</option>';
+    }
+    sel.innerHTML = html;
+    sel.addEventListener('change', function () {
+      state.provider = this.value;
+      render();
+    });
+
+    // Search
+    EL('filter-search').addEventListener('input', function () {
+      state.search = this.value;
+      render();
+    });
+
+    // Sort
+    EL('filter-sort').addEventListener('change', function () {
+      state.sort = this.value;
+      render();
+    });
+
+    // Show all
+    EL('btn-showall').addEventListener('click', function () {
+      state.limit = state.limit === 0 ? 100 : 0;
+      this.textContent = state.limit === 0 ? 'Afficher moins' : 'Afficher tout (' + rankings.length + ')';
+      render();
+    });
+  }
+
+  // ─── Init ───
+  document.addEventListener('DOMContentLoaded', loadData);
+})();

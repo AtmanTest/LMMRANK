@@ -1,1052 +1,1783 @@
-[
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 86.3,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 84.9,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 83.1,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 82.7,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 80.9,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 78.7,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 76.3,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 79.5,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 75.3,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 77.8,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 76.4,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 80.0,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 70.9,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 74.8,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 72.4,
-    "date": "2026-06-24"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 84.3,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 85.4,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 85.1,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 82.8,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 83.7,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 82.2,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 81.2,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 77.0,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 80.7,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 77.4,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 74.0,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 76.0,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 74.4,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 72.8,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 74.8,
-    "date": "2026-06-27"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 84.9,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 86.4,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 84.7,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 85.9,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 84.0,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 82.3,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 77.1,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 79.6,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 78.1,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 81.0,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 78.4,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 76.3,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 73.3,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 73.8,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 73.3,
-    "date": "2026-06-30"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 84.1,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 83.2,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 84.6,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 84.6,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 83.2,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 83.1,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 78.2,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 79.1,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 77.9,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 77.5,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 78.0,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 72.2,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 74.6,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 73.5,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 71.8,
-    "date": "2026-07-03"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 83.4,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 84.3,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 82.5,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 85.7,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 82.6,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 79.5,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 78.0,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 79.0,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 77.4,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 77.5,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 77.2,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 74.9,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 72.5,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 74.3,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 72.4,
-    "date": "2026-07-06"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 88.7,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 84.6,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 84.3,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 85.7,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 82.7,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 81.8,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 77.9,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 79.7,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 77.5,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 78.2,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 78.7,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 74.8,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 74.5,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 75.0,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 73.8,
-    "date": "2026-07-09"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 84.8,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 84.9,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 84.0,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 84.1,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 82.4,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 82.5,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 80.1,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 80.2,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 78.1,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 77.1,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 76.8,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 76.4,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 73.3,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 74.1,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 72.6,
-    "date": "2026-07-12"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 86.7,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 84.2,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 85.5,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 85.5,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 82.8,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 81.8,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 77.9,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 78.0,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 78.0,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 76.3,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 77.8,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 75.3,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 73.5,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 73.6,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 72.7,
-    "date": "2026-07-15"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 85.5,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 84.7,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 84.4,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 84.3,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 83.0,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 81.3,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 78.8,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 78.0,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 78.3,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 77.7,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 77.9,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 75.1,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 74.9,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 74.9,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 72.5,
-    "date": "2026-07-18"
-  },
-  {
-    "model_id": "gemini-3-pro",
-    "display_name": "Gemini 3 Pro",
-    "provider": "google",
-    "global_score": 85.9,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "gpt-5",
-    "display_name": "GPT-5",
-    "provider": "openai",
-    "global_score": 85.2,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "o4",
-    "display_name": "O4",
-    "provider": "openai",
-    "global_score": 84.6,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "gpt-4.1",
-    "display_name": "GPT-4.1",
-    "provider": "openai",
-    "global_score": 84.7,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "claude-4-opus",
-    "display_name": "Claude 4 Opus",
-    "provider": "anthropic",
-    "global_score": 82.8,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "deepseek-v4",
-    "display_name": "DeepSeek V4",
-    "provider": "deepseek",
-    "global_score": 81.6,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "claude-4-sonnet",
-    "display_name": "Claude 4 Sonnet",
-    "provider": "anthropic",
-    "global_score": 78.9,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "o4-mini",
-    "display_name": "O4 Mini",
-    "provider": "openai",
-    "global_score": 78.0,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "gemini-2.5-pro",
-    "display_name": "Gemini 2.5 Pro",
-    "provider": "google",
-    "global_score": 78.4,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "o3-mini",
-    "display_name": "O3 Mini",
-    "provider": "openai",
-    "global_score": 77.6,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "nova-premier",
-    "display_name": "Nova Premier",
-    "provider": "amazon",
-    "global_score": 77.6,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "gpt-4.5",
-    "display_name": "GPT-4.5",
-    "provider": "openai",
-    "global_score": 75.3,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "grok-4",
-    "display_name": "Grok 4",
-    "provider": "xai",
-    "global_score": 74.9,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "llama-4-405b",
-    "display_name": "Llama 4 405B",
-    "provider": "meta",
-    "global_score": 74.3,
-    "date": "2026-07-21"
-  },
-  {
-    "model_id": "qwen-3-110b",
-    "display_name": "Qwen 3 110B",
-    "provider": "alibaba",
-    "global_score": 73.3,
-    "date": "2026-07-21"
-  }
-]
+{
+  "metadata": {
+    "generated_at": "2026-07-24T23:03:58.578689+00:00",
+    "snapshots": 5
+  },
+  "history": [
+    {
+      "date": "2026-06-26",
+      "snapshot": [
+        {
+          "model_id": "claude-fable-5",
+          "display_name": "claude-fable-5",
+          "provider": "Anthropic",
+          "arena_score": 1509.2,
+          "rank": 1
+        },
+        {
+          "model_id": "claude-opus-4-6-thinking",
+          "display_name": "claude-opus-4-6-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1497.4,
+          "rank": 2
+        },
+        {
+          "model_id": "claude-opus-4-7-thinking",
+          "display_name": "claude-opus-4-7-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1498.4,
+          "rank": 3
+        },
+        {
+          "model_id": "claude-opus-4-6",
+          "display_name": "claude-opus-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1493.6,
+          "rank": 4
+        },
+        {
+          "model_id": "muse-spark-1-1",
+          "display_name": "muse-spark-1.1",
+          "provider": "Meta",
+          "arena_score": 1498.8,
+          "rank": 5
+        },
+        {
+          "model_id": "claude-opus-4-7",
+          "display_name": "claude-opus-4-7",
+          "provider": "Anthropic",
+          "arena_score": 1496.8,
+          "rank": 6
+        },
+        {
+          "model_id": "muse-spark",
+          "display_name": "muse-spark",
+          "provider": "Meta",
+          "arena_score": 1494.3,
+          "rank": 7
+        },
+        {
+          "model_id": "gemini-3-1-pro-preview",
+          "display_name": "gemini-3.1-pro-preview",
+          "provider": "Google",
+          "arena_score": 1479.4,
+          "rank": 8
+        },
+        {
+          "model_id": "gemini-3-pro",
+          "display_name": "gemini-3-pro",
+          "provider": "Google",
+          "arena_score": 1484.8,
+          "rank": 9
+        },
+        {
+          "model_id": "kimi-k3",
+          "display_name": "kimi-k3",
+          "provider": "Moonshot",
+          "arena_score": 1478.5,
+          "rank": 10
+        },
+        {
+          "model_id": "gpt-5-6-sol-xhigh",
+          "display_name": "gpt-5.6-sol-xhigh",
+          "provider": "OpenAI",
+          "arena_score": 1480.5,
+          "rank": 11
+        },
+        {
+          "model_id": "gemini-3-6-flash",
+          "display_name": "gemini-3.6-flash",
+          "provider": "Google",
+          "arena_score": 1485.1,
+          "rank": 12
+        },
+        {
+          "model_id": "claude-opus-4-8-thinking",
+          "display_name": "claude-opus-4-8-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1476.4,
+          "rank": 13
+        },
+        {
+          "model_id": "gpt-5-5-high",
+          "display_name": "gpt-5.5-high",
+          "provider": "OpenAI",
+          "arena_score": 1477.2,
+          "rank": 14
+        },
+        {
+          "model_id": "gpt-5-4-high",
+          "display_name": "gpt-5.4-high",
+          "provider": "OpenAI",
+          "arena_score": 1480.4,
+          "rank": 15
+        },
+        {
+          "model_id": "gpt-5-5",
+          "display_name": "gpt-5.5",
+          "provider": "OpenAI",
+          "arena_score": 1476.7,
+          "rank": 16
+        },
+        {
+          "model_id": "gemini-3-5-flash-high",
+          "display_name": "gemini-3.5-flash-high",
+          "provider": "Google",
+          "arena_score": 1471.5,
+          "rank": 17
+        },
+        {
+          "model_id": "gpt-5-2-chat-latest-20260210",
+          "display_name": "gpt-5.2-chat-latest-20260210",
+          "provider": "OpenAI",
+          "arena_score": 1477.4,
+          "rank": 18
+        },
+        {
+          "model_id": "qwen3-7-max-preview",
+          "display_name": "qwen3.7-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1480.0,
+          "rank": 19
+        },
+        {
+          "model_id": "grok-4-20-beta1",
+          "display_name": "grok-4.20-beta1",
+          "provider": "SpaceXAI",
+          "arena_score": 1466.1,
+          "rank": 20
+        },
+        {
+          "model_id": "gemini-3-5-flash-medium",
+          "display_name": "gemini-3.5-flash-medium",
+          "provider": "Google",
+          "arena_score": 1478.9,
+          "rank": 21
+        },
+        {
+          "model_id": "claude-opus-4-8",
+          "display_name": "claude-opus-4-8",
+          "provider": "Anthropic",
+          "arena_score": 1476.2,
+          "rank": 22
+        },
+        {
+          "model_id": "gpt-5-5-instant",
+          "display_name": "gpt-5.5-instant",
+          "provider": "OpenAI",
+          "arena_score": 1470.4,
+          "rank": 23
+        },
+        {
+          "model_id": "grok-4-20-beta-0309-reasoning",
+          "display_name": "grok-4.20-beta-0309-reasoning",
+          "provider": "SpaceXAI",
+          "arena_score": 1467.5,
+          "rank": 24
+        },
+        {
+          "model_id": "gemini-3-flash",
+          "display_name": "gemini-3-flash",
+          "provider": "Google",
+          "arena_score": 1480.3,
+          "rank": 25
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101-thinking-32k",
+          "display_name": "claude-opus-4-5-20251101-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1470.4,
+          "rank": 26
+        },
+        {
+          "model_id": "claude-sonnet-4-6",
+          "display_name": "claude-sonnet-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1466.5,
+          "rank": 27
+        },
+        {
+          "model_id": "grok-4-20-multi-agent-beta-0309",
+          "display_name": "grok-4.20-multi-agent-beta-0309",
+          "provider": "SpaceXAI",
+          "arena_score": 1464.5,
+          "rank": 28
+        },
+        {
+          "model_id": "glm-5-1",
+          "display_name": "glm-5.1",
+          "provider": "Z.ai",
+          "arena_score": 1475.6,
+          "rank": 29
+        },
+        {
+          "model_id": "glm-5-2-max",
+          "display_name": "glm-5.2 (max)",
+          "provider": "Z.ai",
+          "arena_score": 1470.7,
+          "rank": 30
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101",
+          "display_name": "claude-opus-4-5-20251101",
+          "provider": "Anthropic",
+          "arena_score": 1473.9,
+          "rank": 31
+        },
+        {
+          "model_id": "ernie-5-1",
+          "display_name": "ernie-5.1",
+          "provider": "Baidu",
+          "arena_score": 1471.7,
+          "rank": 32
+        },
+        {
+          "model_id": "grok-4-5",
+          "display_name": "grok-4.5",
+          "provider": "SpaceXAI",
+          "arena_score": 1468.6,
+          "rank": 33
+        },
+        {
+          "model_id": "mimo-v2-5-pro",
+          "display_name": "mimo-v2.5-pro",
+          "provider": "Xiaomi",
+          "arena_score": 1474.6,
+          "rank": 34
+        },
+        {
+          "model_id": "gpt-5-4",
+          "display_name": "gpt-5.4",
+          "provider": "OpenAI",
+          "arena_score": 1464.1,
+          "rank": 35
+        },
+        {
+          "model_id": "grok-4-1-thinking",
+          "display_name": "grok-4.1-thinking",
+          "provider": "SpaceXAI",
+          "arena_score": 1466.8,
+          "rank": 36
+        },
+        {
+          "model_id": "qwen3-5-max-preview",
+          "display_name": "qwen3.5-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1470.3,
+          "rank": 37
+        },
+        {
+          "model_id": "claude-sonnet-5-high",
+          "display_name": "claude-sonnet-5-high",
+          "provider": "Anthropic",
+          "arena_score": 1462.9,
+          "rank": 38
+        },
+        {
+          "model_id": "kimi-k2-6",
+          "display_name": "kimi-k2.6",
+          "provider": "Moonshot",
+          "arena_score": 1466.8,
+          "rank": 39
+        },
+        {
+          "model_id": "qwen3-6-max-preview",
+          "display_name": "qwen3.6-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1461.2,
+          "rank": 40
+        },
+        {
+          "model_id": "qwen3-7-plus",
+          "display_name": "qwen3.7-plus",
+          "provider": "Alibaba",
+          "arena_score": 1463.3,
+          "rank": 41
+        },
+        {
+          "model_id": "grok-4-1",
+          "display_name": "grok-4.1",
+          "provider": "SpaceXAI",
+          "arena_score": 1451.7,
+          "rank": 42
+        },
+        {
+          "model_id": "gemini-3-5-flash-lite",
+          "display_name": "gemini-3.5-flash-lite",
+          "provider": "Google",
+          "arena_score": 1454.6,
+          "rank": 43
+        },
+        {
+          "model_id": "gemini-3-flash-thinking-minimal",
+          "display_name": "gemini-3-flash (thinking-minimal)",
+          "provider": "Google",
+          "arena_score": 1455.6,
+          "rank": 44
+        },
+        {
+          "model_id": "glm-5",
+          "display_name": "glm-5",
+          "provider": "Z.ai",
+          "arena_score": 1450.3,
+          "rank": 45
+        },
+        {
+          "model_id": "deepseek-v4-pro",
+          "display_name": "deepseek-v4-pro",
+          "provider": "DeepSeek",
+          "arena_score": 1452.7,
+          "rank": 46
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929-thinking-32k",
+          "display_name": "claude-sonnet-4-5-20250929-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1449.6,
+          "rank": 47
+        },
+        {
+          "model_id": "dola-seed-2-0-pro",
+          "display_name": "dola-seed-2.0-pro",
+          "provider": "Bytedance",
+          "arena_score": 1451.4,
+          "rank": 48
+        },
+        {
+          "model_id": "deepseek-v4-pro-thinking",
+          "display_name": "deepseek-v4-pro-thinking",
+          "provider": "DeepSeek",
+          "arena_score": 1457.2,
+          "rank": 49
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929",
+          "display_name": "claude-sonnet-4-5-20250929",
+          "provider": "Anthropic",
+          "arena_score": 1452.8,
+          "rank": 50
+        }
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "snapshot": [
+        {
+          "model_id": "claude-fable-5",
+          "display_name": "claude-fable-5",
+          "provider": "Anthropic",
+          "arena_score": 1504.9,
+          "rank": 1
+        },
+        {
+          "model_id": "claude-opus-4-6-thinking",
+          "display_name": "claude-opus-4-6-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1500.4,
+          "rank": 2
+        },
+        {
+          "model_id": "claude-opus-4-7-thinking",
+          "display_name": "claude-opus-4-7-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1498.3,
+          "rank": 3
+        },
+        {
+          "model_id": "claude-opus-4-6",
+          "display_name": "claude-opus-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1505.0,
+          "rank": 4
+        },
+        {
+          "model_id": "muse-spark-1-1",
+          "display_name": "muse-spark-1.1",
+          "provider": "Meta",
+          "arena_score": 1497.4,
+          "rank": 5
+        },
+        {
+          "model_id": "claude-opus-4-7",
+          "display_name": "claude-opus-4-7",
+          "provider": "Anthropic",
+          "arena_score": 1495.7,
+          "rank": 6
+        },
+        {
+          "model_id": "muse-spark",
+          "display_name": "muse-spark",
+          "provider": "Meta",
+          "arena_score": 1482.7,
+          "rank": 7
+        },
+        {
+          "model_id": "gemini-3-1-pro-preview",
+          "display_name": "gemini-3.1-pro-preview",
+          "provider": "Google",
+          "arena_score": 1489.7,
+          "rank": 8
+        },
+        {
+          "model_id": "gemini-3-pro",
+          "display_name": "gemini-3-pro",
+          "provider": "Google",
+          "arena_score": 1480.6,
+          "rank": 9
+        },
+        {
+          "model_id": "kimi-k3",
+          "display_name": "kimi-k3",
+          "provider": "Moonshot",
+          "arena_score": 1484.1,
+          "rank": 10
+        },
+        {
+          "model_id": "gpt-5-6-sol-xhigh",
+          "display_name": "gpt-5.6-sol-xhigh",
+          "provider": "OpenAI",
+          "arena_score": 1492.8,
+          "rank": 11
+        },
+        {
+          "model_id": "gemini-3-6-flash",
+          "display_name": "gemini-3.6-flash",
+          "provider": "Google",
+          "arena_score": 1487.2,
+          "rank": 12
+        },
+        {
+          "model_id": "claude-opus-4-8-thinking",
+          "display_name": "claude-opus-4-8-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1484.9,
+          "rank": 13
+        },
+        {
+          "model_id": "gpt-5-5-high",
+          "display_name": "gpt-5.5-high",
+          "provider": "OpenAI",
+          "arena_score": 1485.0,
+          "rank": 14
+        },
+        {
+          "model_id": "gpt-5-4-high",
+          "display_name": "gpt-5.4-high",
+          "provider": "OpenAI",
+          "arena_score": 1483.5,
+          "rank": 15
+        },
+        {
+          "model_id": "gpt-5-5",
+          "display_name": "gpt-5.5",
+          "provider": "OpenAI",
+          "arena_score": 1480.4,
+          "rank": 16
+        },
+        {
+          "model_id": "gemini-3-5-flash-high",
+          "display_name": "gemini-3.5-flash-high",
+          "provider": "Google",
+          "arena_score": 1471.7,
+          "rank": 17
+        },
+        {
+          "model_id": "gpt-5-2-chat-latest-20260210",
+          "display_name": "gpt-5.2-chat-latest-20260210",
+          "provider": "OpenAI",
+          "arena_score": 1468.5,
+          "rank": 18
+        },
+        {
+          "model_id": "qwen3-7-max-preview",
+          "display_name": "qwen3.7-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1472.0,
+          "rank": 19
+        },
+        {
+          "model_id": "grok-4-20-beta1",
+          "display_name": "grok-4.20-beta1",
+          "provider": "SpaceXAI",
+          "arena_score": 1470.3,
+          "rank": 20
+        },
+        {
+          "model_id": "gemini-3-5-flash-medium",
+          "display_name": "gemini-3.5-flash-medium",
+          "provider": "Google",
+          "arena_score": 1469.4,
+          "rank": 21
+        },
+        {
+          "model_id": "claude-opus-4-8",
+          "display_name": "claude-opus-4-8",
+          "provider": "Anthropic",
+          "arena_score": 1480.1,
+          "rank": 22
+        },
+        {
+          "model_id": "gpt-5-5-instant",
+          "display_name": "gpt-5.5-instant",
+          "provider": "OpenAI",
+          "arena_score": 1479.0,
+          "rank": 23
+        },
+        {
+          "model_id": "grok-4-20-beta-0309-reasoning",
+          "display_name": "grok-4.20-beta-0309-reasoning",
+          "provider": "SpaceXAI",
+          "arena_score": 1470.0,
+          "rank": 24
+        },
+        {
+          "model_id": "gemini-3-flash",
+          "display_name": "gemini-3-flash",
+          "provider": "Google",
+          "arena_score": 1475.5,
+          "rank": 25
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101-thinking-32k",
+          "display_name": "claude-opus-4-5-20251101-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1471.3,
+          "rank": 26
+        },
+        {
+          "model_id": "claude-sonnet-4-6",
+          "display_name": "claude-sonnet-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1479.6,
+          "rank": 27
+        },
+        {
+          "model_id": "grok-4-20-multi-agent-beta-0309",
+          "display_name": "grok-4.20-multi-agent-beta-0309",
+          "provider": "SpaceXAI",
+          "arena_score": 1470.3,
+          "rank": 28
+        },
+        {
+          "model_id": "glm-5-1",
+          "display_name": "glm-5.1",
+          "provider": "Z.ai",
+          "arena_score": 1466.2,
+          "rank": 29
+        },
+        {
+          "model_id": "glm-5-2-max",
+          "display_name": "glm-5.2 (max)",
+          "provider": "Z.ai",
+          "arena_score": 1464.9,
+          "rank": 30
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101",
+          "display_name": "claude-opus-4-5-20251101",
+          "provider": "Anthropic",
+          "arena_score": 1470.0,
+          "rank": 31
+        },
+        {
+          "model_id": "ernie-5-1",
+          "display_name": "ernie-5.1",
+          "provider": "Baidu",
+          "arena_score": 1464.2,
+          "rank": 32
+        },
+        {
+          "model_id": "grok-4-5",
+          "display_name": "grok-4.5",
+          "provider": "SpaceXAI",
+          "arena_score": 1469.4,
+          "rank": 33
+        },
+        {
+          "model_id": "mimo-v2-5-pro",
+          "display_name": "mimo-v2.5-pro",
+          "provider": "Xiaomi",
+          "arena_score": 1473.4,
+          "rank": 34
+        },
+        {
+          "model_id": "gpt-5-4",
+          "display_name": "gpt-5.4",
+          "provider": "OpenAI",
+          "arena_score": 1464.4,
+          "rank": 35
+        },
+        {
+          "model_id": "grok-4-1-thinking",
+          "display_name": "grok-4.1-thinking",
+          "provider": "SpaceXAI",
+          "arena_score": 1461.5,
+          "rank": 36
+        },
+        {
+          "model_id": "qwen3-5-max-preview",
+          "display_name": "qwen3.5-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1473.0,
+          "rank": 37
+        },
+        {
+          "model_id": "claude-sonnet-5-high",
+          "display_name": "claude-sonnet-5-high",
+          "provider": "Anthropic",
+          "arena_score": 1461.2,
+          "rank": 38
+        },
+        {
+          "model_id": "kimi-k2-6",
+          "display_name": "kimi-k2.6",
+          "provider": "Moonshot",
+          "arena_score": 1454.5,
+          "rank": 39
+        },
+        {
+          "model_id": "qwen3-6-max-preview",
+          "display_name": "qwen3.6-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1452.8,
+          "rank": 40
+        },
+        {
+          "model_id": "qwen3-7-plus",
+          "display_name": "qwen3.7-plus",
+          "provider": "Alibaba",
+          "arena_score": 1453.8,
+          "rank": 41
+        },
+        {
+          "model_id": "grok-4-1",
+          "display_name": "grok-4.1",
+          "provider": "SpaceXAI",
+          "arena_score": 1461.0,
+          "rank": 42
+        },
+        {
+          "model_id": "gemini-3-5-flash-lite",
+          "display_name": "gemini-3.5-flash-lite",
+          "provider": "Google",
+          "arena_score": 1463.7,
+          "rank": 43
+        },
+        {
+          "model_id": "gemini-3-flash-thinking-minimal",
+          "display_name": "gemini-3-flash (thinking-minimal)",
+          "provider": "Google",
+          "arena_score": 1457.8,
+          "rank": 44
+        },
+        {
+          "model_id": "glm-5",
+          "display_name": "glm-5",
+          "provider": "Z.ai",
+          "arena_score": 1450.0,
+          "rank": 45
+        },
+        {
+          "model_id": "deepseek-v4-pro",
+          "display_name": "deepseek-v4-pro",
+          "provider": "DeepSeek",
+          "arena_score": 1455.1,
+          "rank": 46
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929-thinking-32k",
+          "display_name": "claude-sonnet-4-5-20250929-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1463.9,
+          "rank": 47
+        },
+        {
+          "model_id": "dola-seed-2-0-pro",
+          "display_name": "dola-seed-2.0-pro",
+          "provider": "Bytedance",
+          "arena_score": 1455.5,
+          "rank": 48
+        },
+        {
+          "model_id": "deepseek-v4-pro-thinking",
+          "display_name": "deepseek-v4-pro-thinking",
+          "provider": "DeepSeek",
+          "arena_score": 1462.5,
+          "rank": 49
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929",
+          "display_name": "claude-sonnet-4-5-20250929",
+          "provider": "Anthropic",
+          "arena_score": 1460.8,
+          "rank": 50
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "snapshot": [
+        {
+          "model_id": "claude-fable-5",
+          "display_name": "claude-fable-5",
+          "provider": "Anthropic",
+          "arena_score": 1499.2,
+          "rank": 1
+        },
+        {
+          "model_id": "claude-opus-4-6-thinking",
+          "display_name": "claude-opus-4-6-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1508.5,
+          "rank": 2
+        },
+        {
+          "model_id": "claude-opus-4-7-thinking",
+          "display_name": "claude-opus-4-7-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1504.9,
+          "rank": 3
+        },
+        {
+          "model_id": "claude-opus-4-6",
+          "display_name": "claude-opus-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1498.6,
+          "rank": 4
+        },
+        {
+          "model_id": "muse-spark-1-1",
+          "display_name": "muse-spark-1.1",
+          "provider": "Meta",
+          "arena_score": 1491.3,
+          "rank": 5
+        },
+        {
+          "model_id": "claude-opus-4-7",
+          "display_name": "claude-opus-4-7",
+          "provider": "Anthropic",
+          "arena_score": 1496.3,
+          "rank": 6
+        },
+        {
+          "model_id": "muse-spark",
+          "display_name": "muse-spark",
+          "provider": "Meta",
+          "arena_score": 1481.8,
+          "rank": 7
+        },
+        {
+          "model_id": "gemini-3-1-pro-preview",
+          "display_name": "gemini-3.1-pro-preview",
+          "provider": "Google",
+          "arena_score": 1485.0,
+          "rank": 8
+        },
+        {
+          "model_id": "gemini-3-pro",
+          "display_name": "gemini-3-pro",
+          "provider": "Google",
+          "arena_score": 1485.3,
+          "rank": 9
+        },
+        {
+          "model_id": "kimi-k3",
+          "display_name": "kimi-k3",
+          "provider": "Moonshot",
+          "arena_score": 1493.3,
+          "rank": 10
+        },
+        {
+          "model_id": "gpt-5-6-sol-xhigh",
+          "display_name": "gpt-5.6-sol-xhigh",
+          "provider": "OpenAI",
+          "arena_score": 1491.0,
+          "rank": 11
+        },
+        {
+          "model_id": "gemini-3-6-flash",
+          "display_name": "gemini-3.6-flash",
+          "provider": "Google",
+          "arena_score": 1481.2,
+          "rank": 12
+        },
+        {
+          "model_id": "claude-opus-4-8-thinking",
+          "display_name": "claude-opus-4-8-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1484.0,
+          "rank": 13
+        },
+        {
+          "model_id": "gpt-5-5-high",
+          "display_name": "gpt-5.5-high",
+          "provider": "OpenAI",
+          "arena_score": 1476.9,
+          "rank": 14
+        },
+        {
+          "model_id": "gpt-5-4-high",
+          "display_name": "gpt-5.4-high",
+          "provider": "OpenAI",
+          "arena_score": 1484.6,
+          "rank": 15
+        },
+        {
+          "model_id": "gpt-5-5",
+          "display_name": "gpt-5.5",
+          "provider": "OpenAI",
+          "arena_score": 1481.9,
+          "rank": 16
+        },
+        {
+          "model_id": "gemini-3-5-flash-high",
+          "display_name": "gemini-3.5-flash-high",
+          "provider": "Google",
+          "arena_score": 1472.8,
+          "rank": 17
+        },
+        {
+          "model_id": "gpt-5-2-chat-latest-20260210",
+          "display_name": "gpt-5.2-chat-latest-20260210",
+          "provider": "OpenAI",
+          "arena_score": 1478.2,
+          "rank": 18
+        },
+        {
+          "model_id": "qwen3-7-max-preview",
+          "display_name": "qwen3.7-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1476.7,
+          "rank": 19
+        },
+        {
+          "model_id": "grok-4-20-beta1",
+          "display_name": "grok-4.20-beta1",
+          "provider": "SpaceXAI",
+          "arena_score": 1468.4,
+          "rank": 20
+        },
+        {
+          "model_id": "gemini-3-5-flash-medium",
+          "display_name": "gemini-3.5-flash-medium",
+          "provider": "Google",
+          "arena_score": 1478.2,
+          "rank": 21
+        },
+        {
+          "model_id": "claude-opus-4-8",
+          "display_name": "claude-opus-4-8",
+          "provider": "Anthropic",
+          "arena_score": 1473.6,
+          "rank": 22
+        },
+        {
+          "model_id": "gpt-5-5-instant",
+          "display_name": "gpt-5.5-instant",
+          "provider": "OpenAI",
+          "arena_score": 1477.5,
+          "rank": 23
+        },
+        {
+          "model_id": "grok-4-20-beta-0309-reasoning",
+          "display_name": "grok-4.20-beta-0309-reasoning",
+          "provider": "SpaceXAI",
+          "arena_score": 1473.5,
+          "rank": 24
+        },
+        {
+          "model_id": "gemini-3-flash",
+          "display_name": "gemini-3-flash",
+          "provider": "Google",
+          "arena_score": 1465.0,
+          "rank": 25
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101-thinking-32k",
+          "display_name": "claude-opus-4-5-20251101-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1470.2,
+          "rank": 26
+        },
+        {
+          "model_id": "claude-sonnet-4-6",
+          "display_name": "claude-sonnet-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1465.3,
+          "rank": 27
+        },
+        {
+          "model_id": "grok-4-20-multi-agent-beta-0309",
+          "display_name": "grok-4.20-multi-agent-beta-0309",
+          "provider": "SpaceXAI",
+          "arena_score": 1477.9,
+          "rank": 28
+        },
+        {
+          "model_id": "glm-5-1",
+          "display_name": "glm-5.1",
+          "provider": "Z.ai",
+          "arena_score": 1476.1,
+          "rank": 29
+        },
+        {
+          "model_id": "glm-5-2-max",
+          "display_name": "glm-5.2 (max)",
+          "provider": "Z.ai",
+          "arena_score": 1474.3,
+          "rank": 30
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101",
+          "display_name": "claude-opus-4-5-20251101",
+          "provider": "Anthropic",
+          "arena_score": 1465.9,
+          "rank": 31
+        },
+        {
+          "model_id": "ernie-5-1",
+          "display_name": "ernie-5.1",
+          "provider": "Baidu",
+          "arena_score": 1460.9,
+          "rank": 32
+        },
+        {
+          "model_id": "grok-4-5",
+          "display_name": "grok-4.5",
+          "provider": "SpaceXAI",
+          "arena_score": 1474.0,
+          "rank": 33
+        },
+        {
+          "model_id": "mimo-v2-5-pro",
+          "display_name": "mimo-v2.5-pro",
+          "provider": "Xiaomi",
+          "arena_score": 1474.2,
+          "rank": 34
+        },
+        {
+          "model_id": "gpt-5-4",
+          "display_name": "gpt-5.4",
+          "provider": "OpenAI",
+          "arena_score": 1459.4,
+          "rank": 35
+        },
+        {
+          "model_id": "grok-4-1-thinking",
+          "display_name": "grok-4.1-thinking",
+          "provider": "SpaceXAI",
+          "arena_score": 1465.8,
+          "rank": 36
+        },
+        {
+          "model_id": "qwen3-5-max-preview",
+          "display_name": "qwen3.5-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1458.1,
+          "rank": 37
+        },
+        {
+          "model_id": "claude-sonnet-5-high",
+          "display_name": "claude-sonnet-5-high",
+          "provider": "Anthropic",
+          "arena_score": 1465.2,
+          "rank": 38
+        },
+        {
+          "model_id": "kimi-k2-6",
+          "display_name": "kimi-k2.6",
+          "provider": "Moonshot",
+          "arena_score": 1465.3,
+          "rank": 39
+        },
+        {
+          "model_id": "qwen3-6-max-preview",
+          "display_name": "qwen3.6-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1454.1,
+          "rank": 40
+        },
+        {
+          "model_id": "qwen3-7-plus",
+          "display_name": "qwen3.7-plus",
+          "provider": "Alibaba",
+          "arena_score": 1459.6,
+          "rank": 41
+        },
+        {
+          "model_id": "grok-4-1",
+          "display_name": "grok-4.1",
+          "provider": "SpaceXAI",
+          "arena_score": 1459.8,
+          "rank": 42
+        },
+        {
+          "model_id": "gemini-3-5-flash-lite",
+          "display_name": "gemini-3.5-flash-lite",
+          "provider": "Google",
+          "arena_score": 1455.2,
+          "rank": 43
+        },
+        {
+          "model_id": "gemini-3-flash-thinking-minimal",
+          "display_name": "gemini-3-flash (thinking-minimal)",
+          "provider": "Google",
+          "arena_score": 1465.0,
+          "rank": 44
+        },
+        {
+          "model_id": "glm-5",
+          "display_name": "glm-5",
+          "provider": "Z.ai",
+          "arena_score": 1455.8,
+          "rank": 45
+        },
+        {
+          "model_id": "deepseek-v4-pro",
+          "display_name": "deepseek-v4-pro",
+          "provider": "DeepSeek",
+          "arena_score": 1452.4,
+          "rank": 46
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929-thinking-32k",
+          "display_name": "claude-sonnet-4-5-20250929-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1456.6,
+          "rank": 47
+        },
+        {
+          "model_id": "dola-seed-2-0-pro",
+          "display_name": "dola-seed-2.0-pro",
+          "provider": "Bytedance",
+          "arena_score": 1458.7,
+          "rank": 48
+        },
+        {
+          "model_id": "deepseek-v4-pro-thinking",
+          "display_name": "deepseek-v4-pro-thinking",
+          "provider": "DeepSeek",
+          "arena_score": 1450.2,
+          "rank": 49
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929",
+          "display_name": "claude-sonnet-4-5-20250929",
+          "provider": "Anthropic",
+          "arena_score": 1452.0,
+          "rank": 50
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "snapshot": [
+        {
+          "model_id": "claude-fable-5",
+          "display_name": "claude-fable-5",
+          "provider": "Anthropic",
+          "arena_score": 1514.9,
+          "rank": 1
+        },
+        {
+          "model_id": "claude-opus-4-6-thinking",
+          "display_name": "claude-opus-4-6-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1507.4,
+          "rank": 2
+        },
+        {
+          "model_id": "claude-opus-4-7-thinking",
+          "display_name": "claude-opus-4-7-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1501.0,
+          "rank": 3
+        },
+        {
+          "model_id": "claude-opus-4-6",
+          "display_name": "claude-opus-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1498.3,
+          "rank": 4
+        },
+        {
+          "model_id": "muse-spark-1-1",
+          "display_name": "muse-spark-1.1",
+          "provider": "Meta",
+          "arena_score": 1488.9,
+          "rank": 5
+        },
+        {
+          "model_id": "claude-opus-4-7",
+          "display_name": "claude-opus-4-7",
+          "provider": "Anthropic",
+          "arena_score": 1489.6,
+          "rank": 6
+        },
+        {
+          "model_id": "muse-spark",
+          "display_name": "muse-spark",
+          "provider": "Meta",
+          "arena_score": 1485.4,
+          "rank": 7
+        },
+        {
+          "model_id": "gemini-3-1-pro-preview",
+          "display_name": "gemini-3.1-pro-preview",
+          "provider": "Google",
+          "arena_score": 1487.4,
+          "rank": 8
+        },
+        {
+          "model_id": "gemini-3-pro",
+          "display_name": "gemini-3-pro",
+          "provider": "Google",
+          "arena_score": 1481.7,
+          "rank": 9
+        },
+        {
+          "model_id": "kimi-k3",
+          "display_name": "kimi-k3",
+          "provider": "Moonshot",
+          "arena_score": 1481.5,
+          "rank": 10
+        },
+        {
+          "model_id": "gpt-5-6-sol-xhigh",
+          "display_name": "gpt-5.6-sol-xhigh",
+          "provider": "OpenAI",
+          "arena_score": 1478.1,
+          "rank": 11
+        },
+        {
+          "model_id": "gemini-3-6-flash",
+          "display_name": "gemini-3.6-flash",
+          "provider": "Google",
+          "arena_score": 1487.1,
+          "rank": 12
+        },
+        {
+          "model_id": "claude-opus-4-8-thinking",
+          "display_name": "claude-opus-4-8-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1479.7,
+          "rank": 13
+        },
+        {
+          "model_id": "gpt-5-5-high",
+          "display_name": "gpt-5.5-high",
+          "provider": "OpenAI",
+          "arena_score": 1488.5,
+          "rank": 14
+        },
+        {
+          "model_id": "gpt-5-4-high",
+          "display_name": "gpt-5.4-high",
+          "provider": "OpenAI",
+          "arena_score": 1483.8,
+          "rank": 15
+        },
+        {
+          "model_id": "gpt-5-5",
+          "display_name": "gpt-5.5",
+          "provider": "OpenAI",
+          "arena_score": 1469.1,
+          "rank": 16
+        },
+        {
+          "model_id": "gemini-3-5-flash-high",
+          "display_name": "gemini-3.5-flash-high",
+          "provider": "Google",
+          "arena_score": 1471.8,
+          "rank": 17
+        },
+        {
+          "model_id": "gpt-5-2-chat-latest-20260210",
+          "display_name": "gpt-5.2-chat-latest-20260210",
+          "provider": "OpenAI",
+          "arena_score": 1478.7,
+          "rank": 18
+        },
+        {
+          "model_id": "qwen3-7-max-preview",
+          "display_name": "qwen3.7-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1470.4,
+          "rank": 19
+        },
+        {
+          "model_id": "grok-4-20-beta1",
+          "display_name": "grok-4.20-beta1",
+          "provider": "SpaceXAI",
+          "arena_score": 1468.1,
+          "rank": 20
+        },
+        {
+          "model_id": "gemini-3-5-flash-medium",
+          "display_name": "gemini-3.5-flash-medium",
+          "provider": "Google",
+          "arena_score": 1481.0,
+          "rank": 21
+        },
+        {
+          "model_id": "claude-opus-4-8",
+          "display_name": "claude-opus-4-8",
+          "provider": "Anthropic",
+          "arena_score": 1474.1,
+          "rank": 22
+        },
+        {
+          "model_id": "gpt-5-5-instant",
+          "display_name": "gpt-5.5-instant",
+          "provider": "OpenAI",
+          "arena_score": 1472.6,
+          "rank": 23
+        },
+        {
+          "model_id": "grok-4-20-beta-0309-reasoning",
+          "display_name": "grok-4.20-beta-0309-reasoning",
+          "provider": "SpaceXAI",
+          "arena_score": 1477.6,
+          "rank": 24
+        },
+        {
+          "model_id": "gemini-3-flash",
+          "display_name": "gemini-3-flash",
+          "provider": "Google",
+          "arena_score": 1477.9,
+          "rank": 25
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101-thinking-32k",
+          "display_name": "claude-opus-4-5-20251101-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1468.0,
+          "rank": 26
+        },
+        {
+          "model_id": "claude-sonnet-4-6",
+          "display_name": "claude-sonnet-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1466.6,
+          "rank": 27
+        },
+        {
+          "model_id": "grok-4-20-multi-agent-beta-0309",
+          "display_name": "grok-4.20-multi-agent-beta-0309",
+          "provider": "SpaceXAI",
+          "arena_score": 1469.9,
+          "rank": 28
+        },
+        {
+          "model_id": "glm-5-1",
+          "display_name": "glm-5.1",
+          "provider": "Z.ai",
+          "arena_score": 1468.8,
+          "rank": 29
+        },
+        {
+          "model_id": "glm-5-2-max",
+          "display_name": "glm-5.2 (max)",
+          "provider": "Z.ai",
+          "arena_score": 1468.5,
+          "rank": 30
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101",
+          "display_name": "claude-opus-4-5-20251101",
+          "provider": "Anthropic",
+          "arena_score": 1472.7,
+          "rank": 31
+        },
+        {
+          "model_id": "ernie-5-1",
+          "display_name": "ernie-5.1",
+          "provider": "Baidu",
+          "arena_score": 1470.8,
+          "rank": 32
+        },
+        {
+          "model_id": "grok-4-5",
+          "display_name": "grok-4.5",
+          "provider": "SpaceXAI",
+          "arena_score": 1475.7,
+          "rank": 33
+        },
+        {
+          "model_id": "mimo-v2-5-pro",
+          "display_name": "mimo-v2.5-pro",
+          "provider": "Xiaomi",
+          "arena_score": 1460.6,
+          "rank": 34
+        },
+        {
+          "model_id": "gpt-5-4",
+          "display_name": "gpt-5.4",
+          "provider": "OpenAI",
+          "arena_score": 1464.4,
+          "rank": 35
+        },
+        {
+          "model_id": "grok-4-1-thinking",
+          "display_name": "grok-4.1-thinking",
+          "provider": "SpaceXAI",
+          "arena_score": 1463.4,
+          "rank": 36
+        },
+        {
+          "model_id": "qwen3-5-max-preview",
+          "display_name": "qwen3.5-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1470.8,
+          "rank": 37
+        },
+        {
+          "model_id": "claude-sonnet-5-high",
+          "display_name": "claude-sonnet-5-high",
+          "provider": "Anthropic",
+          "arena_score": 1457.0,
+          "rank": 38
+        },
+        {
+          "model_id": "kimi-k2-6",
+          "display_name": "kimi-k2.6",
+          "provider": "Moonshot",
+          "arena_score": 1456.0,
+          "rank": 39
+        },
+        {
+          "model_id": "qwen3-6-max-preview",
+          "display_name": "qwen3.6-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1459.2,
+          "rank": 40
+        },
+        {
+          "model_id": "qwen3-7-plus",
+          "display_name": "qwen3.7-plus",
+          "provider": "Alibaba",
+          "arena_score": 1458.8,
+          "rank": 41
+        },
+        {
+          "model_id": "grok-4-1",
+          "display_name": "grok-4.1",
+          "provider": "SpaceXAI",
+          "arena_score": 1455.5,
+          "rank": 42
+        },
+        {
+          "model_id": "gemini-3-5-flash-lite",
+          "display_name": "gemini-3.5-flash-lite",
+          "provider": "Google",
+          "arena_score": 1455.0,
+          "rank": 43
+        },
+        {
+          "model_id": "gemini-3-flash-thinking-minimal",
+          "display_name": "gemini-3-flash (thinking-minimal)",
+          "provider": "Google",
+          "arena_score": 1465.8,
+          "rank": 44
+        },
+        {
+          "model_id": "glm-5",
+          "display_name": "glm-5",
+          "provider": "Z.ai",
+          "arena_score": 1456.1,
+          "rank": 45
+        },
+        {
+          "model_id": "deepseek-v4-pro",
+          "display_name": "deepseek-v4-pro",
+          "provider": "DeepSeek",
+          "arena_score": 1462.8,
+          "rank": 46
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929-thinking-32k",
+          "display_name": "claude-sonnet-4-5-20250929-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1456.8,
+          "rank": 47
+        },
+        {
+          "model_id": "dola-seed-2-0-pro",
+          "display_name": "dola-seed-2.0-pro",
+          "provider": "Bytedance",
+          "arena_score": 1447.8,
+          "rank": 48
+        },
+        {
+          "model_id": "deepseek-v4-pro-thinking",
+          "display_name": "deepseek-v4-pro-thinking",
+          "provider": "DeepSeek",
+          "arena_score": 1463.0,
+          "rank": 49
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929",
+          "display_name": "claude-sonnet-4-5-20250929",
+          "provider": "Anthropic",
+          "arena_score": 1460.4,
+          "rank": 50
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "snapshot": [
+        {
+          "model_id": "claude-fable-5",
+          "display_name": "claude-fable-5",
+          "provider": "Anthropic",
+          "arena_score": 1514.5,
+          "rank": 1
+        },
+        {
+          "model_id": "claude-opus-4-6-thinking",
+          "display_name": "claude-opus-4-6-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1511.8,
+          "rank": 2
+        },
+        {
+          "model_id": "claude-opus-4-7-thinking",
+          "display_name": "claude-opus-4-7-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1507.6,
+          "rank": 3
+        },
+        {
+          "model_id": "claude-opus-4-6",
+          "display_name": "claude-opus-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1492.7,
+          "rank": 4
+        },
+        {
+          "model_id": "muse-spark-1-1",
+          "display_name": "muse-spark-1.1",
+          "provider": "Meta",
+          "arena_score": 1494.8,
+          "rank": 5
+        },
+        {
+          "model_id": "claude-opus-4-7",
+          "display_name": "claude-opus-4-7",
+          "provider": "Anthropic",
+          "arena_score": 1489.4,
+          "rank": 6
+        },
+        {
+          "model_id": "muse-spark",
+          "display_name": "muse-spark",
+          "provider": "Meta",
+          "arena_score": 1486.4,
+          "rank": 7
+        },
+        {
+          "model_id": "gemini-3-1-pro-preview",
+          "display_name": "gemini-3.1-pro-preview",
+          "provider": "Google",
+          "arena_score": 1478.9,
+          "rank": 8
+        },
+        {
+          "model_id": "gemini-3-pro",
+          "display_name": "gemini-3-pro",
+          "provider": "Google",
+          "arena_score": 1484.1,
+          "rank": 9
+        },
+        {
+          "model_id": "kimi-k3",
+          "display_name": "kimi-k3",
+          "provider": "Moonshot",
+          "arena_score": 1493.8,
+          "rank": 10
+        },
+        {
+          "model_id": "gpt-5-6-sol-xhigh",
+          "display_name": "gpt-5.6-sol-xhigh",
+          "provider": "OpenAI",
+          "arena_score": 1481.2,
+          "rank": 11
+        },
+        {
+          "model_id": "gemini-3-6-flash",
+          "display_name": "gemini-3.6-flash",
+          "provider": "Google",
+          "arena_score": 1489.5,
+          "rank": 12
+        },
+        {
+          "model_id": "claude-opus-4-8-thinking",
+          "display_name": "claude-opus-4-8-thinking",
+          "provider": "Anthropic",
+          "arena_score": 1483.3,
+          "rank": 13
+        },
+        {
+          "model_id": "gpt-5-5-high",
+          "display_name": "gpt-5.5-high",
+          "provider": "OpenAI",
+          "arena_score": 1480.8,
+          "rank": 14
+        },
+        {
+          "model_id": "gpt-5-4-high",
+          "display_name": "gpt-5.4-high",
+          "provider": "OpenAI",
+          "arena_score": 1485.3,
+          "rank": 15
+        },
+        {
+          "model_id": "gpt-5-5",
+          "display_name": "gpt-5.5",
+          "provider": "OpenAI",
+          "arena_score": 1483.9,
+          "rank": 16
+        },
+        {
+          "model_id": "gemini-3-5-flash-high",
+          "display_name": "gemini-3.5-flash-high",
+          "provider": "Google",
+          "arena_score": 1476.9,
+          "rank": 17
+        },
+        {
+          "model_id": "gpt-5-2-chat-latest-20260210",
+          "display_name": "gpt-5.2-chat-latest-20260210",
+          "provider": "OpenAI",
+          "arena_score": 1479.5,
+          "rank": 18
+        },
+        {
+          "model_id": "qwen3-7-max-preview",
+          "display_name": "qwen3.7-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1469.5,
+          "rank": 19
+        },
+        {
+          "model_id": "grok-4-20-beta1",
+          "display_name": "grok-4.20-beta1",
+          "provider": "SpaceXAI",
+          "arena_score": 1470.7,
+          "rank": 20
+        },
+        {
+          "model_id": "gemini-3-5-flash-medium",
+          "display_name": "gemini-3.5-flash-medium",
+          "provider": "Google",
+          "arena_score": 1481.5,
+          "rank": 21
+        },
+        {
+          "model_id": "claude-opus-4-8",
+          "display_name": "claude-opus-4-8",
+          "provider": "Anthropic",
+          "arena_score": 1474.3,
+          "rank": 22
+        },
+        {
+          "model_id": "gpt-5-5-instant",
+          "display_name": "gpt-5.5-instant",
+          "provider": "OpenAI",
+          "arena_score": 1473.7,
+          "rank": 23
+        },
+        {
+          "model_id": "grok-4-20-beta-0309-reasoning",
+          "display_name": "grok-4.20-beta-0309-reasoning",
+          "provider": "SpaceXAI",
+          "arena_score": 1477.0,
+          "rank": 24
+        },
+        {
+          "model_id": "gemini-3-flash",
+          "display_name": "gemini-3-flash",
+          "provider": "Google",
+          "arena_score": 1465.9,
+          "rank": 25
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101-thinking-32k",
+          "display_name": "claude-opus-4-5-20251101-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1474.3,
+          "rank": 26
+        },
+        {
+          "model_id": "claude-sonnet-4-6",
+          "display_name": "claude-sonnet-4-6",
+          "provider": "Anthropic",
+          "arena_score": 1473.0,
+          "rank": 27
+        },
+        {
+          "model_id": "grok-4-20-multi-agent-beta-0309",
+          "display_name": "grok-4.20-multi-agent-beta-0309",
+          "provider": "SpaceXAI",
+          "arena_score": 1476.6,
+          "rank": 28
+        },
+        {
+          "model_id": "glm-5-1",
+          "display_name": "glm-5.1",
+          "provider": "Z.ai",
+          "arena_score": 1464.5,
+          "rank": 29
+        },
+        {
+          "model_id": "glm-5-2-max",
+          "display_name": "glm-5.2 (max)",
+          "provider": "Z.ai",
+          "arena_score": 1476.4,
+          "rank": 30
+        },
+        {
+          "model_id": "claude-opus-4-5-20251101",
+          "display_name": "claude-opus-4-5-20251101",
+          "provider": "Anthropic",
+          "arena_score": 1462.3,
+          "rank": 31
+        },
+        {
+          "model_id": "ernie-5-1",
+          "display_name": "ernie-5.1",
+          "provider": "Baidu",
+          "arena_score": 1463.0,
+          "rank": 32
+        },
+        {
+          "model_id": "grok-4-5",
+          "display_name": "grok-4.5",
+          "provider": "SpaceXAI",
+          "arena_score": 1469.5,
+          "rank": 33
+        },
+        {
+          "model_id": "mimo-v2-5-pro",
+          "display_name": "mimo-v2.5-pro",
+          "provider": "Xiaomi",
+          "arena_score": 1469.8,
+          "rank": 34
+        },
+        {
+          "model_id": "gpt-5-4",
+          "display_name": "gpt-5.4",
+          "provider": "OpenAI",
+          "arena_score": 1461.8,
+          "rank": 35
+        },
+        {
+          "model_id": "grok-4-1-thinking",
+          "display_name": "grok-4.1-thinking",
+          "provider": "SpaceXAI",
+          "arena_score": 1459.9,
+          "rank": 36
+        },
+        {
+          "model_id": "qwen3-5-max-preview",
+          "display_name": "qwen3.5-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1471.2,
+          "rank": 37
+        },
+        {
+          "model_id": "claude-sonnet-5-high",
+          "display_name": "claude-sonnet-5-high",
+          "provider": "Anthropic",
+          "arena_score": 1456.9,
+          "rank": 38
+        },
+        {
+          "model_id": "kimi-k2-6",
+          "display_name": "kimi-k2.6",
+          "provider": "Moonshot",
+          "arena_score": 1462.5,
+          "rank": 39
+        },
+        {
+          "model_id": "qwen3-6-max-preview",
+          "display_name": "qwen3.6-max-preview",
+          "provider": "Alibaba",
+          "arena_score": 1461.9,
+          "rank": 40
+        },
+        {
+          "model_id": "qwen3-7-plus",
+          "display_name": "qwen3.7-plus",
+          "provider": "Alibaba",
+          "arena_score": 1458.7,
+          "rank": 41
+        },
+        {
+          "model_id": "grok-4-1",
+          "display_name": "grok-4.1",
+          "provider": "SpaceXAI",
+          "arena_score": 1460.3,
+          "rank": 42
+        },
+        {
+          "model_id": "gemini-3-5-flash-lite",
+          "display_name": "gemini-3.5-flash-lite",
+          "provider": "Google",
+          "arena_score": 1459.4,
+          "rank": 43
+        },
+        {
+          "model_id": "gemini-3-flash-thinking-minimal",
+          "display_name": "gemini-3-flash (thinking-minimal)",
+          "provider": "Google",
+          "arena_score": 1466.0,
+          "rank": 44
+        },
+        {
+          "model_id": "glm-5",
+          "display_name": "glm-5",
+          "provider": "Z.ai",
+          "arena_score": 1452.3,
+          "rank": 45
+        },
+        {
+          "model_id": "deepseek-v4-pro",
+          "display_name": "deepseek-v4-pro",
+          "provider": "DeepSeek",
+          "arena_score": 1460.5,
+          "rank": 46
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929-thinking-32k",
+          "display_name": "claude-sonnet-4-5-20250929-thinking-32k",
+          "provider": "Anthropic",
+          "arena_score": 1451.8,
+          "rank": 47
+        },
+        {
+          "model_id": "dola-seed-2-0-pro",
+          "display_name": "dola-seed-2.0-pro",
+          "provider": "Bytedance",
+          "arena_score": 1453.3,
+          "rank": 48
+        },
+        {
+          "model_id": "deepseek-v4-pro-thinking",
+          "display_name": "deepseek-v4-pro-thinking",
+          "provider": "DeepSeek",
+          "arena_score": 1457.7,
+          "rank": 49
+        },
+        {
+          "model_id": "claude-sonnet-4-5-20250929",
+          "display_name": "claude-sonnet-4-5-20250929",
+          "provider": "Anthropic",
+          "arena_score": 1451.8,
+          "rank": 50
+        }
+      ]
+    }
+  ]
+}
