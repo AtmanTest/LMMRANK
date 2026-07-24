@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LLMRANK — AI Model Leaderboard</title>
+  <meta name="description" content="Classement composite des modèles IA — scores agrégés depuis 11 benchmarks publics avec filtres avancés, historique et transparence." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@450;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>📊</text></svg>" />
+</head>
+<body>
+  <nav class="top-bar">
+    <div class="top-bar-inner">
+      <a class="logo" href="./">LLMRANK</a>
+      <span class="logo-sub">v2</span>
+      <span class="top-bar-meta" id="metaLine"></span>
+    </div>
+  </nav>
+
+  <main class="shell">
+    <!-- Hero -->
+    <header class="hero">
+      <div>
+        <h1>AI Model Leaderboard</h1>
+        <p class="lede">Score composite pondéré de <strong id="modelCountHero">—</strong> modèles, agrégé depuis <strong id="benchmarkCountHero">—</strong> benchmarks publics. <a href="#methodology">Méthodologie →</a></p>
+      </div>
+      <div class="hero-actions">
+        <button id="refreshBtn" title="Rafraîchir les données">⟳</button>
+        <button id="showAllBenchmarks" class="ghost" title="Afficher tous les benchmarks">+ Benchmarks</button>
+      </div>
+    </header>
+
+    <!-- Stats -->
+    <section class="stats" id="stats" aria-label="Statistiques du classement"></section>
+
+    <!-- Filters -->
+    <section class="filters" aria-label="Filtres">
+      <div class="filter-row">
+        <div class="fg">
+          <label for="providerFilter">Provider</label>
+          <select id="providerFilter"></select>
+        </div>
+        <div class="fg">
+          <label for="familyFilter">Famille</label>
+          <select id="familyFilter"></select>
+        </div>
+        <div class="fg">
+          <label for="modalityFilter">Modalité</label>
+          <select id="modalityFilter"></select>
+        </div>
+        <div class="fg">
+          <label for="licenseFilter">Licence</label>
+          <select id="licenseFilter"></select>
+        </div>
+        <div class="fg" style="min-width:140px">
+          <label for="priceFilter">Prix max /1M</label>
+          <select id="priceFilter">
+            <option value="all">Tous</option>
+            <option value="0.5">≤ $0.50</option>
+            <option value="1">≤ $1.00</option>
+            <option value="3">≤ $3.00</option>
+            <option value="10">≤ $10.00</option>
+            <option value="20">≤ $20.00</option>
+            <option value="100">≤ $100.00</option>
+          </select>
+        </div>
+        <div class="fg" style="min-width:130px">
+          <label for="speedFilter">Rapidité</label>
+          <select id="speedFilter">
+            <option value="all">Toutes</option>
+            <option value="fast">Rapide (≥150 tok/s)</option>
+            <option value="medium">Moyen (50-149)</option>
+            <option value="slow">Lent (&lt;50)</option>
+          </select>
+        </div>
+        <div class="fg grow">
+          <label for="searchInput">Recherche</label>
+          <input id="searchInput" type="search" placeholder="Claude, GPT, Qwen…" />
+        </div>
+        <div class="fg" style="min-width:140px">
+          <label for="statusFilter">Statut</label>
+          <select id="statusFilter">
+            <option value="all">Tous</option>
+            <option value="active">Actif</option>
+            <option value="stale">Stale</option>
+            <option value="partial">Partiel</option>
+          </select>
+        </div>
+        <div class="fg" style="min-width:120px">
+          <label for="sortSelect">Tri</label>
+          <select id="sortSelect">
+            <option value="rank">Rang</option>
+            <option value="score">Score</option>
+            <option value="price">Prix ↑</option>
+            <option value="price-desc">Prix ↓</option>
+            <option value="speed">Vitesse ↑</option>
+            <option value="context">Contexte ↑</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ranking -->
+    <section class="panel" id="ranking-section">
+      <div class="table-wrap">
+        <table id="rankingTable">
+          <thead id="tableHead">
+            <tr>
+              <th class="col-rank">#</th>
+              <th class="col-model">Modèle</th>
+              <th class="col-provider">Provider</th>
+              <th class="col-score">Score</th>
+              <th class="col-hle">HLE</th>
+              <th class="col-gpqa">GPQA</th>
+              <th class="col-swe">SWE</th>
+              <th class="col-arena">Arena</th>
+              <th class="col-extra hide">LiveB</th>
+              <th class="col-extra hide">MATH</th>
+              <th class="col-extra hide">LCB</th>
+              <th class="col-extra hide">BFCL</th>
+              <th class="col-extra hide">OSW</th>
+              <th class="col-price">Prix</th>
+              <th class="col-context">Ctx</th>
+              <th class="col-status">État</th>
+            </tr>
+          </thead>
+          <tbody id="rankingBody"></tbody>
+        </table>
+      </div>
+      <div class="table-footer" id="tableFooter"></div>
+    </section>
+
+    <!-- History + Methodology -->
+    <div class="grid-2">
+      <section class="panel">
+        <div class="section-head">
+          <h2>Historique</h2>
+          <p>Top 10 — 30 derniers jours</p>
+        </div>
+        <canvas id="historyChart" height="160"></canvas>
+      </section>
+      <section class="panel methodology" id="methodology">
+        <div class="section-head">
+          <h2>Méthodologie</h2>
+          <p>v2 — Composite robuste</p>
+        </div>
+        <ul>
+          <li>Chaque benchmark est normalisé en z-score sur son échelle.</li>
+          <li>Pondération par fiabilité de la source et pertinence métier.</li>
+          <li>Coefficient de fraîcheur : les données &gt;30 jours sont dépréciées.</li>
+          <li>Coefficient de confiance : sources auto-déclarées pénalisées.</li>
+          <li>Les benchmarks absents n'affectent pas le score.</li>
+          <li>Intervalle de confiance reflète le nombre de benchmarks disponibles.</li>
+          <li>Les modèles sans nouvelles données depuis &gt;7 jours sont marqués <span class="tag-stale">stale</span>.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Sources -->
+    <section class="panel sources" id="sources">
+      <div class="section-head">
+        <h2>Sources &amp; Benchmarks</h2>
+        <p>Données agrégées depuis leaderboards publics</p>
+      </div>
+      <div class="source-grid" id="sourceGrid"></div>
+      <p class="source-note">Les données approximatives sont marquées <span class="tag-partial">~</span>. Consultez le <a href="https://github.com/AtmanTest/LMMRANK" target="_blank" rel="noopener">dépôt GitHub</a> pour les scripts de mise à jour.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>LLMRANK v2 · Construit par <a href="https://github.com/AtmanTest" target="_blank" rel="noopener">Atman</a> · <a href="https://github.com/AtmanTest/LMMRANK" target="_blank" rel="noopener">GitHub</a> · Données mises à jour le <span id="footerDate">—</span></span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="app.js"></script>
+</body>
+</html>
