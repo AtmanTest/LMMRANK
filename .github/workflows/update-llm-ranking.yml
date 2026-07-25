@@ -1,7 +1,6 @@
 name: Update LLMRANK Data
 on:
   schedule:
-    # Daily at 06:00 UTC
     - cron: '0 6 * * *'
   workflow_dispatch:
 
@@ -10,7 +9,7 @@ permissions:
   pages: write
 
 jobs:
-  update:
+  scrape-and-update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,8 +18,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Regenerate data
-        run: python3 scripts/generate_data.py
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          python3 -m playwright install chromium --with-deps
+
+      - name: Scrape Chatbot Arena
+        id: scrape
+        run: python3 scripts/arena_scraper.py
 
       - name: Commit if changed
         run: |
